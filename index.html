@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f5">
+<title>Happy Birthday, Saaloni! 🎀</title>
+<style>
+:root{--pink:#f7a8c4;--deep:#a83d68;--cream:#fff8f5;--ink:#53283b;--rose:#ffe2ec}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+button{font:inherit;cursor:pointer}.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:38px 20px;position:relative;overflow:hidden;background:radial-gradient(ellipse at top,#fff 0,#fff0f5 55%,#ffe1eb 100%)}
+.hero:before,.hero:after{content:"♡";position:absolute;color:#ef9fbd;font-size:clamp(100px,22vw,230px);opacity:.22;animation:float 7s ease-in-out infinite}.hero:before{left:-25px;top:7%}.hero:after{right:-20px;bottom:5%;animation-delay:-3s}
+.hero-inner{position:relative;z-index:1;max-width:760px}.eyebrow{font:700 .78rem/1.4 Arial,sans-serif;letter-spacing:.25em;text-transform:uppercase;color:var(--deep)}h1{font-size:clamp(3.1rem,10vw,7rem);line-height:.95;margin:18px 0;color:#a83d68;font-weight:normal}h1 span{display:block;font-style:italic;color:#d76b94}.subtitle{font-size:clamp(1.05rem,3vw,1.35rem);line-height:1.7;max-width:520px;margin:24px auto;color:#75465a}.pill{border:0;border-radius:999px;padding:15px 25px;background:var(--deep);color:white;box-shadow:0 8px 24px #a83d6830;transition:.2s}.pill:hover{transform:translateY(-3px);box-shadow:0 12px 28px #a83d6840}.tiny{font: .78rem Arial,sans-serif;letter-spacing:.08em;margin-top:18px;color:#a46b80}
+section{padding:76px 20px;max-width:1100px;margin:auto}.section-head{text-align:center;margin-bottom:34px}.kicker{font:700 .72rem Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--deep)}h2{font-size:clamp(2.2rem,6vw,3.6rem);font-weight:normal;margin:12px 0}.intro{max-width:620px;line-height:1.8;margin:0 auto;color:#80576a}.gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}.photo{grid-column:span 2;background:white;padding:10px 10px 34px;box-shadow:0 8px 28px #6d2a4514;transform:rotate(var(--tilt));transition:transform .25s,box-shadow .25s;border-radius:3px}.photo:nth-child(2),.photo:nth-child(5){grid-column:span 2;transform:rotate(calc(var(--tilt)*-1))}.photo:hover{transform:rotate(0) translateY(-5px);box-shadow:0 14px 32px #6d2a4524}.photo img{width:100%;height:290px;object-fit:cover;display:block;background:#f7dce5}.caption{text-align:center;padding-top:12px;font-style:italic;color:#9b4e6c;font-size:1rem}.note-card{max-width:740px;margin:0 auto;background:#fff;padding:clamp(25px,6vw,55px);border:1px solid #f5c9d9;box-shadow:0 16px 50px #6d2a4510;position:relative}.note-card:before{content:"✿";position:absolute;right:22px;top:8px;font-size:2rem;color:#e9a1bc}.letter{font-size:1.15rem;line-height:1.95;white-space:pre-line}.signoff{font-style:italic;color:var(--deep);font-size:1.4rem;margin-top:22px}.surprise{text-align:center;background:#fff0f5;border-radius:28px;padding:45px 20px}.gift{font-size:4rem;display:block;margin:12px;animation:bob 2s ease-in-out infinite}.hidden-message{display:none;max-width:650px;margin:26px auto 0;line-height:1.9;font-size:1.15rem;background:white;padding:25px;border-radius:18px}.hidden-message.show{display:block;animation:appear .6s ease}.footer{text-align:center;padding:35px 20px 50px;color:#a46b80;font-size:.9rem}.sparkle{position:fixed;z-index:5;pointer-events:none;animation:fall 2.8s linear forwards;font-size:20px}
+@keyframes float{50%{transform:translateY(-18px) rotate(10deg)}}@keyframes bob{50%{transform:translateY(-9px) rotate(3deg)}}@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}@keyframes fall{to{transform:translateY(110vh) rotate(600deg);opacity:0}}
+@media(max-width:680px){section{padding:58px 16px}.gallery{grid-template-columns:repeat(2,1fr);gap:12px}.photo,.photo:nth-child(2),.photo:nth-child(5){grid-column:span 1}.photo img{height:245px}.photo:last-child{grid-column:1/-1;max-width:70%;justify-self:center}.hero:before{left:-45px}.hero:after{right:-50px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div class="eyebrow">A little page made just for you</div>
+    <h1>Happy Birthday,<span>Saaloni ♡</span></h1>
+    <p class="subtitle">Today is all about celebrating the lovely person you are. So here's a tiny corner of the internet, made to make you smile. 🎀</p>
+    <button class="pill" onclick="document.querySelector('#memories').scrollIntoView({behavior:'smooth'})">Open your little surprise ↓</button>
+    <div class="tiny">MADE WITH LOVE, JUST FOR YOU ✿</div>
+  </div>
+</header>
+
+<section id="memories">
+  <div class="section-head"><div class="kicker">Little moments, lovely memories</div><h2>A gallery of you ♡</h2><p class="intro">Some pictures deserve their own little place on the internet. Here are a few moments to make this day feel extra special.</p></div>
+  <div class="gallery">
+    <div class="photo" style="--tilt:-2deg"><img src="photos/saaloni-01.jpg" alt="Saaloni in a burgundy top" loading="lazy"><div class="caption">A little main-character moment ✨</div></div>
+    <div class="photo" style="--tilt:1.5deg"><img src="photos/saaloni-02.jpg" alt="Saaloni by the water" loading="lazy"><div class="caption">Pretty days & pretty memories 🌷</div></div>
+    <div class="photo" style="--tilt:-1deg"><img src="photos/saaloni-03.jpg" alt="Saaloni making a fun pose" loading="lazy"><div class="caption">Never stop being you 💗</div></div>
+    <div class="photo" style="--tilt:2deg"><img src="photos/saaloni-04.jpg" alt="Saaloni in a festive outfit" loading="lazy"><div class="caption">A little sparkle, always ✨</div></div>
+    <div class="photo" style="--tilt:-1.5deg"><img src="photos/saaloni-05.jpg" alt="Saaloni smiling" loading="lazy"><div class="caption">That smile deserves its own spotlight ♡</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head"><div class="kicker">A note for the birthday girl</div><h2>Just a little reminder 💌</h2></div>
+  <div class="note-card">
+    <div class="letter">Dear Saaloni,
+
+Happy Birthdayyy! 🎂💗
+
+I hope this new chapter brings you so much happiness, peaceful days, exciting adventures, and a hundred little reasons to smile. Keep being your own kind of wonderful, keep dreaming big, and never forget how deserving you are of good things.
+
+May your camera roll fill with beautiful memories, your favourite songs find you at the right time, and your days have more laughter than worries. Here's to new experiences, silly moments, unexpected wins, and a year that feels like a warm hug.
+
+You deserve a day as lovely as the joy you bring into the world. Have the happiest birthday! 🎀</div>
+    <div class="signoff">With lots of love ♡</div>
+  </div>
+</section>
+
+<section>
+  <div class="surprise">
+    <div class="kicker">Psst… one last thing</div><h2>Your birthday surprise 🎁</h2>
+    <p class="intro">There's one more little message waiting for you.</p>
+    <span class="gift">🎁</span>
+    <button class="pill" id="reveal">Tap to unwrap ✨</button>
+    <div class="hidden-message" id="message">🌷 May this year be full of soft mornings, loud laughs, beautiful surprises, and people who make you feel loved. Keep this little page as a reminder that you're worth celebrating — today and every day. Happy Birthday, Saaloni! 💗🎂✨</div>
+  </div>
+</section>
+<footer class="footer">made with ♡, a little sparkle, and lots of birthday wishes · Saaloni's day 🎀</footer>
+<script>
+const btn=document.getElementById('reveal'), msg=document.getElementById('message');
+btn.addEventListener('click',()=>{msg.classList.add('show');btn.textContent='Surprise opened! 💗';btn.disabled=true;for(let i=0;i<45;i++){const s=document.createElement('span');s.className='sparkle';s.textContent=['💗','✨','🎀','🌸','♡'][Math.floor(Math.random()*5)];s.style.left=Math.random()*100+'vw';s.style.top=(-10-Math.random()*30)+'px';s.style.animationDelay=Math.random()*.7+'s';document.body.appendChild(s);setTimeout(()=>s.remove(),3500)}});
+</script>
+</body>
+</html>
